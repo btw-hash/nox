@@ -2,14 +2,21 @@
 
 A personal AI assistant that has run every day since April 2026: a Telegram bot, an Android app and a background agent on a self-hosted server. Single user, private code. This repository is the showcase: what it does and how it is built.
 
-![Nox v9: chat, server watchdog and planner](assets/tour.gif)
+![Nox v9: chat, events and planner](assets/tour.gif)
 
-<sub>Recorded from v9.14 with a fictional owner and seeded data. The interface is in Ukrainian, the language it is used in. Full clips: [new.btwstudio.dev/work/nox](https://new.btwstudio.dev/work/nox).</sub>
+<sub>Recorded from v9.23 with a fictional owner and seeded data. The interface is in Ukrainian, the language it is used in. Full clips of all ten screens: [new.btwstudio.dev/work/nox](https://new.btwstudio.dev/work/nox).</sub>
 
 | Chat | Events | Watchdog | Tasks and projects | Planner |
 |---|---|---|---|---|
 | ![Chat](assets/chat.webp) | ![Events](assets/events.webp) | ![Watchdog](assets/watchdog.webp) | ![Tasks](assets/tasks.webp) | ![Planner](assets/planner.webp) |
 | An answer with its steps and a result card | Signals grouped by source | One alert per outage, false alarms swallowed | Today, deadlines, progress | Counters, checklists, a study journal |
+
+| Finances | Home | Mail | News | Content |
+|---|---|---|---|---|
+| ![Finances](assets/money.webp) | ![Home](assets/home.webp) | ![Mail](assets/mail.webp) | ![News](assets/news.webp) | ![Content](assets/content.webp) |
+| Shared recurring payments, who pays, what is overdue | Power schedule, devices, server and model limits | What matters first, phishing quarantined with a reason | A feed by topic with a short summary | Drafts and scheduled posts for a channel |
+
+<sub>In the home, mail, news and content recordings the data comes from fictional responses, because the real sources are the owner's smart home, mailbox and channel.</sub>
 
 ## What it does
 
@@ -17,6 +24,10 @@ A personal AI assistant that has run every day since April 2026: a Telegram bot,
 - **Events instead of noise.** Incoming signals (client replies, accepted orders, server incidents) land as cards with one notification per batch, read items move to an archive.
 - **Self-monitoring.** A watchdog tracks the server and its services. One outage produces one alert, recovery is silent, and a narrow set of repairs (for example restarting a single named container) runs without a human.
 - **A weekly planner.** One day per screen: tasks, checklists, counters and a study journal. Unfinished items carry over by themselves and repeating ones accumulate instead of merging.
+- **Shared finances.** Recurring household payments with a payer, a due day and a monthly total; overdue items stand out and one tap marks a payment.
+- **Home.** Smart-home devices and scenes, a power-outage schedule checked against what the server and a charging dock actually observed.
+- **Mail triage.** Important messages first, newsletters folded away, phishing quarantined with the reason stated, reply drafts awaiting approval.
+- **News.** A feed by topic where every item has a short summary.
 - **Voice in.** Speech is transcribed locally on a GPU before it reaches the model.
 - **Content pipeline.** Drafting, scheduling and publishing posts to a Telegram channel.
 - **Updates without reinstalling.** The Android shell is rebuilt only when native code changes; the interface updates itself over the air.
@@ -42,7 +53,7 @@ flowchart LR
 - **Model access behind one module**, so the model or tier changes in one place.
 - **Dead features are switched off by list, then deleted.** A usage audit over the full history retired ten modules that nobody used.
 - **Side effects get a real smoke test.** Anything that sends a message, restarts a service or touches the server is exercised against the live system before it ships.
-- **Every release goes through a pull request**, 60 so far in the current repository.
+- **Every release goes through a pull request**, 70 so far in the current repository.
 
 ## Stack
 
