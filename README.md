@@ -4,7 +4,7 @@ A personal AI assistant that has run every day since April 2026: a Telegram bot,
 
 ![Nox v9: chat, events and planner](assets/tour.gif)
 
-<sub>Recorded from v9.23 with a fictional owner and seeded data. The interface is in Ukrainian, the language it is used in. Full clips of all ten screens: [new.btwstudio.dev/work/nox](https://new.btwstudio.dev/work/nox).</sub>
+<sub>Recorded from v9.23 with a fictional owner and seeded data. The interface is in Ukrainian, the language it is used in. Full clips of all ten screens: [btwstudio.dev/work/nox](https://btwstudio.dev/work/nox).</sub>
 
 | Chat | Events | Watchdog | Tasks and projects | Planner |
 |---|---|---|---|---|
@@ -20,7 +20,7 @@ A personal AI assistant that has run every day since April 2026: a Telegram bot,
 
 ### The same app in English
 
-A [2.5-minute walkthrough](https://new.btwstudio.dev/work/nox) of v9.24, recorded with the interface switched to English for the shoot. Chat replies in it are replayed from a script, and the rows on screen are demo data.
+A [2.5-minute walkthrough](https://btwstudio.dev/work/nox) of v9.24, recorded with the interface switched to English for the shoot. Chat replies in it are replayed from a script, and the rows on screen are demo data.
 
 | Chat | Approval | Events | Mail | Orders | Planner |
 |---|---|---|---|---|---|
