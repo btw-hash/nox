@@ -18,6 +18,20 @@ A personal AI assistant that has run every day since April 2026: a Telegram bot,
 
 <sub>In the home, mail, news and content recordings the data comes from fictional responses, because the real sources are the owner's smart home, mailbox and channel.</sub>
 
+### The same app in English
+
+A [2.5-minute walkthrough](https://new.btwstudio.dev/work/nox) of v9.24, recorded with the interface switched to English for the shoot. Chat replies in it are replayed from a script, and the rows on screen are demo data.
+
+| Chat | Approval | Events | Mail | Orders | Planner |
+|---|---|---|---|---|---|
+| ![Chat](assets/en/chat.webp) | ![Approval](assets/en/agent.webp) | ![Events](assets/en/events.webp) | ![Mail](assets/en/mail.webp) | ![Orders](assets/en/orders.webp) | ![Planner](assets/en/planner.webp) |
+| One answer from the planner, tasks and mail | A shell command waits for Allow | Important first | Phishing in quarantine | Scored freelance jobs with a drafted bid | The day by the hour |
+
+| Money | Home | Tasks | Projects | News | Content |
+|---|---|---|---|---|---|
+| ![Money](assets/en/money.webp) | ![Home](assets/en/home.webp) | ![Tasks](assets/en/tasks.webp) | ![Projects](assets/en/projects.webp) | ![News](assets/en/news.webp) | ![Content](assets/en/content.webp) |
+| Paid, overdue, left this month | Power schedule and devices | Grouped by project | Status and the last commit | A digest by topic | Compose, draft, schedule |
+
 ## What it does
 
 - **Chat with tools.** Tasks, backlog, mail, projects and news are reachable from one conversation; answers show their steps and survive a restart.
