@@ -73,6 +73,10 @@ flowchart LR
 
 TypeScript · grammY · SQLite (better-sqlite3) · Claude Agent SDK · Express 5 · React 19 · Tailwind 4 · Capacitor (Android) · node-cron · faster-whisper · Vitest · Docker · Cloudflare Tunnel
 
+## License
+
+The code is published for reference. All rights reserved: reading it is welcome, reusing it needs written permission.
+
 ---
 
 Built by [BTW Studio](https://github.com/btw-hash).
